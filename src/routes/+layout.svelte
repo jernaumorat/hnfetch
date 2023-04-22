@@ -30,8 +30,10 @@
 		height: 100%;
 		flex-grow: 1;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-items: center;
+		justify-content: space-around;
 	}
 
 	.container {
