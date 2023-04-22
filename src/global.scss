@@ -1,0 +1,25 @@
+$background-colour: #ffffff;
+$foreground-colour: #f6f6ef;
+$title-colour: #ff6600;
+$body-text-colour: #000000;
+$label-text-colour: #828282;
+
+$item-shadow: 3.2px 1.8px 3.2px rgba(0, 0, 0, 0.15), 8.8px 5px 8.8px rgba(0, 0, 0, 0.098),
+	21.1px 12.1px 21.1px rgba(0, 0, 0, 0.075), 70px 40px 70px rgba(0, 0, 0, 0.052);
+
+* {
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 9pt;
+	gap: 8px;
+}
+
+body {
+	background-color: $background-colour;
+}
+
+a {
+	color: $body-text-colour;
+}
