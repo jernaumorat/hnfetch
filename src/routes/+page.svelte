@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	let invalid = false;
 
@@ -15,7 +16,7 @@
 			return;
 		}
 
-		goto('/item?id=' + idMatch[0]);
+		goto(`${base}/item?id=` + idMatch[0]);
 	};
 
 	const handlePaste = (event: ClipboardEvent) => {
@@ -47,6 +48,7 @@
 
 	input {
 		width: 85%;
+		max-width: 500px;
 		height: 2em;
 		padding: 1.5em;
 		margin: 0 auto;

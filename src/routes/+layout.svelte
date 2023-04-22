@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import '../global.scss';
 </script>
 
 <div class="container">
-	<nav><b><a href="/">Hacker Fetch</a></b></nav>
+	<nav><b><a href={`${base}/`}>Hacker Fetch</a></b></nav>
 	<main><slot /></main>
 </div>
 

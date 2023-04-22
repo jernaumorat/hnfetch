@@ -91,10 +91,17 @@
 			return;
 		}
 
-		const [story, storyId] = await getStoryTitle(parent);
+		try {
+			const [story, storyId] = await getStoryTitle(parent);
 
-		data = { id, type, time, by, text, story, storyId };
-		loading = false;
+			data = { id, type, time, by, text, story, storyId };
+			loading = false;
+		} catch {
+			error = 415;
+			errorMsg = 'Polls not supported';
+			loading = false;
+			return;
+		}
 	});
 </script>
 
