@@ -15,8 +15,8 @@ const config = {
       fallback: 'index.html'
     }),
     paths: {
-      base: '/hnfetch'
-    }
+      base: process.env.NODE_ENV === 'production' ? '/hnfetch' : ''
+    },
   }
 };
 
